@@ -4,7 +4,7 @@ Demo for west-elm products. A Williams-Sonoma Coding Challenge
 
 # Deployment
 
-The project web-page runs directly from a local browser (Latest Chrome, Firefox, IE??) by launching the `product-list.html` inside the `src` directory
+The project web-page runs directly from a local browser (Latest Chrome, Firefox, IE Edge) by launching the `product-list.html` inside the `src` directory
 
 # Testing Requirements
 
