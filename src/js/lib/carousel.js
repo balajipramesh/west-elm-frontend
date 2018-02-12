@@ -3,6 +3,10 @@
  * not all the library would work. There are times we would need to build our own library. The project tries to 
  * exercise that scenario of given a need how can we create a library that can be used within various part of the
  * product.
+ * 
+ * One of the requirement was to have the carousle displayed on a overlay. Based on the planning capacity of the sprint
+ * we have to take it as an user improvement story.
+ * 
  */
 
 var carousel = {};
