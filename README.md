@@ -18,6 +18,8 @@ The testing javascript depends on the following library:
 * Jasmine
 * Karma
 
+Note: Gulp should be installed globally. It can be installed globally by running `npm install -g gulp` 
+
 ## Installation
 
 Once you have `nodejs` and `npm` installed. Download or clone the project. On preferred terminal of your choice go to the folder where the project was downloaded / cloned.
