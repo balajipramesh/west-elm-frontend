@@ -53,7 +53,7 @@ describe("productlist", function () {
     var template = $j('<div>', { id: "productListingContainerId", class: "container" });
     $j('body').append(template);
     init();
-    var length = $j('.carosole').length;
+    var length = $j('.carousel').length;
     expect(length).toBe(24);
   });
 });
