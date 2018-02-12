@@ -27,3 +27,4 @@ npm-debug.log
 # Folders to ignore
 node_modules
 coverage
+target

@@ -5,8 +5,8 @@ var $j = jQuery.noConflict();
  * Builds the template product listing html content
  */
 function init() {
-  // Get an instance of carosole library
-  var carosole = this.carosole;
+  // Get an instance of carousel library
+  var carousel = this.carousel;
 
   var productContainerDiv = $j('#productListingContainerId');
 
@@ -16,9 +16,9 @@ function init() {
     productConditions.groups.forEach(function (product) {
       var productDiv = $j('<div>', { id: product.id, class: 'product' });
 
-      // build carosole into productDiv wrapper element
+      // build carousel into productDiv wrapper element
       product.images.splice(0, 0, product.hero);
-      carosole.buildCarosole(productDiv, product.images);
+      carousel.buildCarousel(productDiv, product.images);
 
       // add a description to the product listing
       productDiv.append($j('<p>', { text: product.name, class: 'description' }));

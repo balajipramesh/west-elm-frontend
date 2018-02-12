@@ -6,6 +6,29 @@ Demo for west-elm products. A Williams-Sonoma Coding Challenge
 
 The project web-page runs directly from a local browser (Latest Chrome, Firefox, IE Edge) by launching the `product-list.html` inside the `src` directory
 
+# Help
+
+### Home
+
+To refresh the page click `Home` menu item.
+
+### Contact
+
+To contact the developer of this project click `Contact` menu item.
+
+### Carousel
+
+* Click any image for the carousel arrows to show up. Click right (clockwise) or left (anti-clockwise) arrows to have the images rotate like a carousel.
+* Click the image again the carousel arrows goes away and the hero image shows up.
+
+### Product Detail
+
+* Click the product detail icon to view the complete detail of the product.
+
+### UI Responsiveness
+
+* As the page shrinks or expands the product columns reduces to 1 column or increases the product column.
+
 # Testing Requirements
 
 To perform js unit test, you must have `nodejs` and `npm` installed.
