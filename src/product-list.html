@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>west elm | Welcome</title>
+  <link rel='stylesheet' href='css/reset.css'>
+  <!-- carosole library -->
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='css/style.css'>
+  <!-- load scripts -->
+  <script src='https://code.jquery.com/jquery-2.2.1.min.js'></script>
+  <script src='js/lib/carosole.js'></script>
+  <script src='js/model/product-list.js'></script>
+  <script src='js/controller/product-list.js'></script>
+</head>
+
+<body>
+  <nav>
+    <div class='mini'></div>
+    <ul>
+      <li>
+        <a href='./product-list.html'>Home</a>
+      </li>
+      <li>
+        <a href="mailto:palsbalaji@gmail.com?Subject=Hi%20Balaji%2C%20we%20loved%20your%20demo%20would%20like%20to%20invite%20you!">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <div id='productListingContainerId' class='container'>
+    <section>
+      <h1>
+        <font color='black'>west elm</font>
+      </h1>
+      <p id='intro'>
+        <font color='black'>At west elm we're focused on the intersection of modern design, affordability and community. Everything we sell—from
+          sofas and tables to bedding and vases—is made with one goal in mind: to help our customers express their personal
+          style at home and in the world. We care about impact too. By designing over 90% of our products in–house, our design
+          team has steadily increased our selection of organic, handcrafted, sustainably sourced and Fair Trade Certified™
+          products. There's a story behind everything we sell—one that starts in Brooklyn and lives on with you.</font>
+      </p>
+    </section>
+  </div>
+</body>
+<script>
+  $j(document).ready(function () {
+    init();
+  });
+</script>
+
+</html>
