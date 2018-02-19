@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for lib/carousel.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">lib/</a> carousel.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>47/47</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>8/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>7/7</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>47/47</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">72×</span>
+<span class="cline-any cline-yes">72×</span>
+<span class="cline-any cline-yes">72×</span>
+<span class="cline-any cline-yes">72×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">72×</span>
+<span class="cline-any cline-yes">273×</span>
+<span class="cline-any cline-yes">201×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">273×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">72×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">72×</span>
+<span class="cline-any cline-yes">72×</span>
+<span class="cline-any cline-yes">72×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">72×</span>
+<span class="cline-any cline-yes">72×</span>
+<span class="cline-any cline-yes">72×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">273×</span>
+<span class="cline-any cline-yes">273×</span>
+<span class="cline-any cline-yes">72×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">273×</span>
+<span class="cline-any cline-yes">273×</span>
+<span class="cline-any cline-yes">273×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * Note to the reader. There were many carousel library that's already available, but when bulding it commercially
+ * not all the library would work. There are times we would need to build our own library. The project tries to 
+ * exercise that scenario of given a need how can we create a library that can be used within various part of the
+ * product.
+ * 
+ * One of the requirement was to have the carousle displayed on a overlay. Based on the planning capacity of the sprint
+ * we have to take it as an user improvement story.
+ * 
+ */
+&nbsp;
+var carousel = {};
+&nbsp;
+/**
+ * Helper method that builds the carousel for a given wrapper element and list of images.
+ * @param {*} wrapperDiv wrapper div within which all the items would be displayed in carousel look and feel 
+ * @param {*} items list of images that will be cycled upon. The first item will be treated as a hero image
+ */
+carousel.buildCarousel = function (wrapperDiv, items) {
+  var carouselDiv = $j('&lt;div&gt;', { class: 'carousel' });
+  var ul = $j('&lt;ul&gt;');
+  carouselDiv.append(ul);
+  var isHero = true;
+&nbsp;
+  // create the carousel div that contains all the items to be carouseld
+  items.forEach(function (image, index) {
+    if (index &gt; 0) {
+      isHero = false;
+    }
+    ul.append(carousel.buildCarouselImageList(image, isHero));
+  });
+&nbsp;
+  // append the carousel div to the wrapper div
+  wrapperDiv.append(carouselDiv);
+&nbsp;
+  // create leftArrow
+  var leftArrowDiv = $j(('&lt;div&gt;'), { name: 'left', class: 'leftarrow hidden' });
+  leftArrowDiv.on('click', this.animateCarousel);
+  wrapperDiv.append(leftArrowDiv);
+&nbsp;
+  // create rightArrow
+  var rightArrowDiv = $j(('&lt;div&gt;'), { name: 'right', class: 'rightarrow hidden' });
+  rightArrowDiv.on('click', this.animateCarousel);
+  wrapperDiv.append(rightArrowDiv);
+};
+&nbsp;
+/**
+ * Helper method that builds an image element to be added inside carousel 
+ * @param {*} image - an image json object that contain a href property 
+ */
+carousel.buildCarouselImageList = function (image, isHero) {
+  var li = $j('&lt;li&gt;');
+  if (isHero) {
+    li.attr('name', 'heroimage');
+  }
+  var img = $j('&lt;img&gt;', { src: image.href });
+  img.on('click', this.triggerToggleArrow);
+  return li.append(img);
+}
+&nbsp;
+/**
+ * Function that toggles to display left and right arrow.
+ * And based on if the carousel is started or stopped, it
+ * re-adjusts the hero image to be at the top. 
+ * 
+ */
+carousel.triggerToggleArrow = function () {
+  var carousel = $j(this).closest('.carousel');
+  if (carousel.siblings('.leftarrow').hasClass('hidden')) {
+    carousel.siblings('.leftarrow').removeClass('hidden');
+    carousel.siblings('.rightarrow').removeClass('hidden');
+  } else {
+    carousel.siblings('.leftarrow').addClass('hidden');
+    carousel.siblings('.rightarrow').addClass('hidden');
+    var carouselItems = carousel.children('ul');
+    var heroImage = carouselItems.children('li[name=heroimage]').detach();
+    carouselItems.prepend(heroImage);
+  }
+}
+&nbsp;
+/**
+ * Function that animates carousel as the user clicks the next icon on the screen
+ * 
+ * Based on user action it either rotates the item in clockwise or anti-clockwise direction
+ *  
+ */
+carousel.animateCarousel = function () {
+  var arrow = $j(this);
+  if (arrow.attr('name').toUpperCase() === 'LEFT') {
+    carousel.rotateAntiClockwise($j(this).parent().find('.carousel'));
+    // user clicked left arrow do something
+  } else {
+    // user clicked right arrow do something
+    carousel.rotateClockwise($j(this).parent().find('.carousel'));
+  }
+}
+&nbsp;
+/**
+ * Given the carousel element rotates the item inside in clockwise direction
+ * 
+ * @param {*} carousel - carousel element that contains items embeded inside in it.
+ */
+carousel.rotateClockwise = function (carousel) {
+  var carouselList = carousel.find('ul');
+  var firstElement = carouselList.children().first().detach();
+  carouselList.append(firstElement);
+}
+&nbsp;
+/**
+ * Given the carousel element rotates the item inside in anti-clockwise direction
+ * 
+ * @param {*} carousel - carousel element that contains items embeded inside in it.
+ */
+carousel.rotateAntiClockwise = function (carousel) {
+  var carouselList = carousel.find('ul');
+  var lastElement = carouselList.children().last().detach();
+  carouselList.prepend(lastElement);
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Feb 19 2018 10:56:10 GMT-0800 (PST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
